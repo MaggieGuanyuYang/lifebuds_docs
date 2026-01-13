@@ -152,6 +152,7 @@
                 <li><strong>Google Gemini</strong></li>
                 <li><strong>OpenAI</strong></li>
                 <li><strong>Anthropic Claude</strong></li>
+                <li><strong>Groq</strong></li>
             </ul>
             <p>When using a custom API key, your data is sent directly from your browser to your chosen provider. Please refer to the privacy policy of your chosen provider for information on how they handle data.</p>
 
@@ -185,8 +186,13 @@
             <p>If you have questions about this privacy policy or how your data is handled, please submit feedback through our form:</p>
             <p><a href="https://docs.google.com/forms/d/e/1FAIpQLSe56aR1koPaNUZ4J85b7UEjGItctAHmekkIdDpIzrAj53hyFQ/viewform?usp=dialog" target="_blank">Submit Feedback</a></p>
 
-            <p class="last-updated">Last updated: January 11, 2026</p>
+            <p class="last-updated">Last updated: <span id="last-updated-date"></span></p>
         </div>
     </div>
+    <script>
+        const date = new Date();
+        const options = { year: 'numeric', month: 'long', day: 'numeric' };
+        document.getElementById('last-updated-date').textContent = date.toLocaleDateString('en-GB', options);
+    </script>
 </body>
 </html>
